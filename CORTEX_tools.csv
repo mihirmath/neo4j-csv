@@ -1,0 +1,60 @@
+name,category,agent,data_source,data_source_type,neo4j_uri,method,description,engine_id,engine_uri,te_id
+calculator,computation,analysis_agent,neo4j://calculator,neo4j,neo4j://34.134.77.114:7687,CYPHER,Perform mathematical calculations,DEFAULT,http://136.116.234.99:4001/graphql,2
+top_customers_by_order_value,customer_analytics,customer_agent,neo4j://top_customers_by_order_value,neo4j,neo4j://34.134.77.114:7687,CYPHER,List top customers by value,DEFAULT,http://136.116.234.99:4001/graphql,2
+top_customers_yoy_declining,customer_analytics,customer_agent,neo4j://top_customers_yoy_declining,neo4j,neo4j://34.134.77.114:7687,CYPHER,Customers whose YoY performance is declining,DEFAULT,http://136.116.234.99:4001/graphql,2
+top_customers_yoy_increasing,customer_analytics,customer_agent,neo4j://top_customers_yoy_increasing,neo4j,neo4j://34.134.77.114:7687,CYPHER,Customers with increasing YoY orders,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_customer_by_id,customer_lookup,customer_agent,neo4j://find_customer_by_id,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find a customer record by its unique ID,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_customer_by_name_partial,customer_lookup,customer_agent,neo4j://find_customer_by_name_partial,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find customers whose names partially match,DEFAULT,http://136.116.234.99:4001/graphql,2
+list_customers_with_orders_current_quarter,customer_report,customer_agent,neo4j://list_customers_with_orders_current_quarter,neo4j,neo4j://34.134.77.114:7687,CYPHER,List customers with orders this quarter,DEFAULT,http://136.116.234.99:4001/graphql,2
+weather_lookup,data_retrieval,data_agent,neo4j://weather_lookup,neo4j,neo4j://34.134.77.114:7687,CYPHER,Get current weather information for a city,DEFAULT,http://136.116.234.99:4001/graphql,2
+web_search,data_retrieval,data_agent,neo4j://web_search,neo4j,neo4j://34.134.77.114:7687,CYPHER,Search the web for information,DEFAULT,http://136.116.234.99:4001/graphql,2
+data_validator,data_validation,analysis_agent,neo4j://data_validator,neo4j,neo4j://34.134.77.114:7687,CYPHER,Validate data format and structure,DEFAULT,http://136.116.234.99:4001/graphql,2
+file_reader,file_operations,system_agent,neo4j://file_reader,neo4j,neo4j://34.134.77.114:7687,CYPHER,Read and return contents of a text file,DEFAULT,http://136.116.234.99:4001/graphql,2
+dependency_inspector_noop,internal,dependency_agent,neo4j://dependency_inspector_noop,neo4j,neo4j://34.134.77.114:7687,CYPHER,Internal placeholder tool for dependency agent (no-op),DEFAULT,http://136.116.234.99:4001/graphql,2
+planner_helper_noop,internal,planner_agent,neo4j://planner_helper_noop,neo4j,neo4j://34.134.77.114:7687,CYPHER,Internal placeholder tool for planner agent (no-op),DEFAULT,http://136.116.234.99:4001/graphql,2
+find_negative_news_impacting_supplier_by_name,news_lookup,news_agent,neo4j://find_negative_news_impacting_supplier_by_name,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find negative news impacting supplier (name),DEFAULT,http://136.116.234.99:4001/graphql,2
+find_negative_news_impacting_supplier_by_symbol,news_lookup,news_agent,neo4j://find_negative_news_impacting_supplier_by_symbol,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find negative news by stock symbol,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_negative_news_within_radius,news_lookup,news_agent,neo4j://find_negative_news_within_radius,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find negative news within a radius,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_news_impacting_supplier_by_name,news_lookup,news_agent,neo4j://find_news_impacting_supplier_by_name,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find news impacting supplier (by name),DEFAULT,http://136.116.234.99:4001/graphql,2
+find_news_within_radius,news_lookup,news_agent,neo4j://find_news_within_radius,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find news within geographic radius,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_customer_for_order_id,order_lookup,customer_agent,neo4j://find_customer_for_order_id,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find the customer associated with an order,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_orders_by_customer_id,order_lookup,customer_agent,neo4j://find_orders_by_customer_id,neo4j,neo4j://34.134.77.114:7687,CYPHER,Retrieve all orders for a customer,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_inventory_and_committed_stock_by_part_id,part_lookup,supplier_agent,neo4j://find_inventory_and_committed_stock_by_part_id,neo4j,neo4j://34.134.77.114:7687,CYPHER,Check inventory + committed stock,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_part_details_by_id,part_lookup,product_agent,neo4j://find_part_details_by_id,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find part details,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_part_id_by_name_partial,part_lookup,product_agent,neo4j://find_part_id_by_name_partial,neo4j,neo4j://34.134.77.114:7687,CYPHER,Search part ID by name,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_similar_part_by_description,part_lookup,product_agent,neo4j://find_similar_part_by_description,neo4j,neo4j://34.134.77.114:7687,CYPHER,Search similar parts by description,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_supplier_by_part_id,part_lookup,supplier_agent,neo4j://find_supplier_by_part_id,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find supplier for part ID,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_bottom_selling_and_unsold_products,product_analytics,product_agent,neo4j://find_bottom_selling_and_unsold_products,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find bottom 10% selling products and unsold products,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_products_with_most_parts,product_analytics,product_agent,neo4j://find_products_with_most_parts,neo4j,neo4j://34.134.77.114:7687,CYPHER,Top products with most parts,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_top_products_with_highest_centrality_parts,product_analytics,product_agent,neo4j://find_top_products_with_highest_centrality_parts,neo4j,neo4j://34.134.77.114:7687,CYPHER,Top products with highest centrality parts,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_top_selling_products,product_analytics,product_agent,neo4j://find_top_selling_products,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find top 10% selling products,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_high_centrality_parts_by_order_id,product_part_lookup,product_agent,neo4j://find_high_centrality_parts_by_order_id,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find high-centrality parts for order ID,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_products_and_parts_by_order_id,product_part_lookup,product_agent,neo4j://find_products_and_parts_by_order_id,neo4j,http://136.116.234.99:3000/engine/Mfg_Parts-03,CYPHER,Find products and parts for order ID,Mfg_Parts-03,http://136.116.234.99:4001/graphql,1
+find_products_by_part_id,product_part_lookup,product_agent,neo4j://find_products_by_part_id,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find all products using a part,DEFAULT,http://136.116.234.99:4001/graphql,2
+compute_cosine_similarity,semantic_similarity,semantic_similarity_agent,neo4j://compute_cosine_similarity,neo4j,neo4j://34.134.77.114:7687,CYPHER,Compute cosine similarity between two vector embeddings,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_similar_prompts_by_embedding,semantic_similarity,semantic_similarity_agent,neo4j://find_similar_prompts_by_embedding,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find similar prompts in Neo4j database using vector embedding similarity,DEFAULT,http://136.116.234.99:4001/graphql,2
+reconstruct_cached_plan,semantic_similarity,semantic_similarity_agent,neo4j://reconstruct_cached_plan,neo4j,neo4j://34.134.77.114:7687,CYPHER,"Reconstruct a complete execution plan from cached Neo4j data including reasoning, agents, tools, dependencies, and properly formatted tool inputs",DEFAULT,http://136.116.234.99:4001/graphql,2
+create_news_sentiment_score,sentiment_analysis,news_agent,neo4j://create_news_sentiment_score,neo4j,neo4j://34.134.77.114:7687,CYPHER,Generate sentiment score for news,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_supplier_address_by_id,supplier_lookup,supplier_agent,neo4j://find_supplier_address_by_id,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find supplier address,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_supplier_details_by_id,supplier_lookup,supplier_agent,neo4j://find_supplier_details_by_id,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find supplier details,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_supplier_id_by_name_partial,supplier_lookup,supplier_agent,neo4j://find_supplier_id_by_name_partial,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find supplier ID by partial name,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_supplier_location_by_id,supplier_lookup,supplier_agent,neo4j://find_supplier_location_by_id,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find supplier location,DEFAULT,http://136.116.234.99:4001/graphql,2
+find_supplier_stock_symbol_by_id,supplier_lookup,supplier_agent,neo4j://find_supplier_stock_symbol_by_id,neo4j,neo4j://34.134.77.114:7687,CYPHER,Find supplier stock symbol,DEFAULT,http://136.116.234.99:4001/graphql,2
+synthesis_helper_tool,synthesis,synthesis_agent,neo4j://synthesis_helper_tool,neo4j,neo4j://34.134.77.114:7687,CYPHER,Helper tool invoked by the synthesis agent to format and persist the final synthesized answer.,DEFAULT,http://136.116.234.99:4001/graphql,2
+text_summarizer,text_processing,analysis_agent,neo4j://text_summarizer,neo4j,neo4j://34.134.77.114:7687,CYPHER,Summarize long text into key points,DEFAULT,http://136.116.234.99:4001/graphql,2
+analyze_news,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+analyze_parts,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+analyze_products,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+analyze_suppliers,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+combining and synthesizing information,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+combining and synthesizing information from multiple sources,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+identify top customers,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+lookup_suppliers,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+news and sentiment analysis for suppliers,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+product analytics,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+product and part analytics,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+retrieve their order history,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+retrieve_order_history,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+supplier analytics,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+"supplier analytics, lookup, and reporting",null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
+synthesize information,null,null,null,null,null,null,null,DEFAULT,http://136.116.234.99:4001/graphql,2
